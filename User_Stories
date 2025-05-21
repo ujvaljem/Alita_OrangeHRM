@@ -1,0 +1,50 @@
+1. As an Admin, I want to be able to upload an employee's profile picture, so that their account is visually identifiable.  
+   - Acceptance Criteria:  
+     - The image upload should accept `.jpg`, `.png`, and `.gif` files up to 1MB in size.  
+     - Recommended dimensions for the profile picture should be 200px X 200px.
+
+2. As an Admin, I want to input the employee's full name (First Name, Middle Name, Last Name), so that their identity is accurately recorded.  
+   - Acceptance Criteria:  
+     - The full name fields should be required for form submission.  
+     - First Name and Last Name should be mandatory, while Middle Name should be optional.
+
+3. As an Admin, I want to assign a unique Employee ID to each employee, so that they can be uniquely identified in the system.  
+   - Acceptance Criteria:  
+     - The Employee ID field should only accept unique entries to prevent duplication.
+
+4. As an Admin, I want the option to create login credentials for the employee, so that they can access the system.  
+   - Acceptance Criteria:  
+     - There should be a toggle switch (on/off) to enable or disable creating login details for employees.  
+     - When enabled, the form should show fields for `Username`, `Password`, and `Confirm Password`.  
+     - When disabled, these fields should be hidden.
+
+5. As an Admin, I want to specify a username for the employee, so that they can use it to log into the system.  
+   - Acceptance Criteria:  
+     - The `Username` field should be required when creating login details.  
+     - The username should be validated for uniqueness to avoid conflicts.
+
+6. As an Admin, I want to set a password for the employee, so that they can securely log in to the system.  
+   - Acceptance Criteria:  
+     - The `Password` and `Confirm Password` fields should be required when creating login details.  
+     - The password must meet security requirements (e.g., a combination of upper and lowercase letters, numbers, and symbols).  
+     - The `Password` and `Confirm Password` fields should be validated to ensure they match.
+
+7. As an Admin, I want to define the account status (Enabled/Disabled) for the employee's login credentials, so that I can control their access to the system.  
+   - Acceptance Criteria:  
+     - The account status should default to `Enabled`.  
+     - The admin should have the option to toggle the account status between `Enabled` and `Disabled`.
+
+8. As an Admin, I want to be able to save the added employee, so that their information is stored in the system.  
+   - Acceptance Criteria:  
+     - The `Save` button should only be enabled if all required fields are correctly filled out.  
+     - A successful save should store the employee's details and reset the form for adding another employee.
+
+9. As an Admin, I want the ability to cancel the operation while adding an employee, so that no changes are saved if I decide to exit.  
+   - Acceptance Criteria:  
+     - Clicking the `Cancel` button should clear all entered information and navigate the admin to the previous screen or dashboard.
+
+10. As an Admin, I want to be informed if there are validation errors during form submission, so that I can rectify them.  
+    - Acceptance Criteria:  
+      - If mandatory fields are empty, missing, or improperly formatted (e.g., invalid password), an error message should display.  
+      - Error messages should be specific (e.g., "Password and Confirm Password do not match").
+
